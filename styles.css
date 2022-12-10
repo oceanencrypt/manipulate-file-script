@@ -1,8 +1,108 @@
+#create-file{
+    display: flex;
+}
+
+
+
+
+
+/* IFRAME WRAPPER */
+
+#iframe-wrapper{
+    overflow-x: auto;
+}
+
+
+
+
+
+
+
+
+
+/* INNER IFRAME STYLING */
+
 #iframe{
     height: 112vh;
     width: 100%;
 }
 
-#create-file{
+.screen-outlook {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0px 10px 0 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    margin: 0px 4px 4px 4px;
+}
+
+.screen-name {
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    margin-right: 5px;
+    border-color: black;
+    height: 100%;
+    padding-right: 5px;
+    display: grid;
+    place-content: center;
+    background: none;
+    width: 100px;
+    border-width: 0px 0px 0px 0px;
+    cursor: pointer;
+}
+.screen-name:focus{
+    outline: none;
+}
+
+.playground-file-btn{
+    border: transparent;
+    background: none;
+    display: grid;
+    place-content: center;
+    margin-left: 2px;
+    width: 20px;
+    height: 37px;
+    cursor: pointer;
+}
+
+.add-file-btn{
+    border: transparent;
+    background: none;
+    display: grid;
+    place-content: center;
+    margin-left: 2px;
+    width: 20px;
+    height: 37px;
+    cursor: pointer;
+}
+
+.input{
+    height: inherit;
+    margin-right: 5px;
+    border-right: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* INNER IFRAME STYLING */
+
+@media (max-width: 859px) {
+    .file-btn-wrapper{
+        overflow-x: scroll;
+    }
 }
